@@ -3052,8 +3052,8 @@ mixAnim_Button.MouseButton1Click:Connect(function()
 	local Animate = plr.Character.Animate
 	Animate.Disabled = true
 	StopAnim()
-	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
-	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
 	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
 	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
 	Animate.jump.JumpAnim.AnimationId = "rbxassetid://185373807911"
