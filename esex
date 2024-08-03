@@ -1669,7 +1669,7 @@ mixAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
 mixAnim_Button.BackgroundTransparency = 0.500
 mixAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 mixAnim_Button.BorderSizePixel = 0
-mixAnim_Button.Position = UDim2.new(0, 25, 0, 527)
+mixAnim_Button.Position = UDim2.new(0, 25, 0, 32)
 mixAnim_Button.Size = UDim2.new(0, 150, 0, 30)
 mixAnim_Button.Font = Enum.Font.Oswald
 mixAnim_Button.Text = "FE MIXXED"
@@ -3052,13 +3052,13 @@ mixAnim_Button.MouseButton1Click:Connect(function()
 	local Animate = plr.Character.Animate
 	Animate.Disabled = true
 	StopAnim()
-	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3303162274"
-	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3303162549"
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
 	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
 	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
-	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18538153691"
-	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
-	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18538164337"
+	Animate.jump.JumpAnim.AnimationId = "rbxassetid://185373807911"
+	Animate.climb.ClimbAnim.AnimationId = "rbxassetid://18537378510"
+	Animate.fall.FallAnim.AnimationId = "rbxassetid://18537367238"
 	plr.Character.Humanoid:ChangeState(3)
 	Animate.Disabled = false
 end)
