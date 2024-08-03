@@ -335,6 +335,7 @@ local PirateAnim_Button = Instance.new("TextButton")
 local SneakyAnim_Button = Instance.new("TextButton")
 local ToyAnim_Button = Instance.new("TextButton")
 local KnightAnim_Button = Instance.new("TextButton")
+local mixAnim_Button = Instance.new("TextButton")
 --NEWS
 local ConfidentAnim_Button = Instance.new("TextButton")
 local PopstarAnim_Button = Instance.new("TextButton")
@@ -1662,6 +1663,22 @@ PatrolAnim_Button.TextScaled = true
 PatrolAnim_Button.TextSize = 14.000
 PatrolAnim_Button.TextWrapped = true
 
+mixAnim_Button.Name = "mix_Button"
+mixAnim_Button.Parent = Animations_Section
+mixAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+mixAnim_Button.BackgroundTransparency = 0.500
+mixAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mixAnim_Button.BorderSizePixel = 0
+mixAnim_Button.Position = UDim2.new(0, 25, 0, 32)
+mixAnim_Button.Size = UDim2.new(0, 150, 0, 30)
+mixAnim_Button.Font = Enum.Font.Oswald
+mixAnim_Button.Text = "FE MIXXED"
+mixAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+mixAnim_Button.TextScaled = true
+mixAnim_Button.TextSize = 14.000
+mixAnim_Button.TextWrapped = true
+
+
 ZombieFEAnim_Button.Name = "ZombieFEAnim_Button"
 ZombieFEAnim_Button.Parent = Animations_Section
 ZombieFEAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
@@ -2110,6 +2127,7 @@ CreateClicker(PrincessAnim_Button)
 CreateClicker(CowboyAnim_Button)
 CreateClicker(PatrolAnim_Button)
 CreateClicker(ZombieFEAnim_Button)
+CreateClicker(mixAnim_Button)
 
 CreateToggle(AntiFling_Button)
 CreateToggle(AntiChatSpy_Button)
@@ -3026,6 +3044,21 @@ ZombieClassicAnim_Button.MouseButton1Click:Connect(function()
 	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
 	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
 	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+mixAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3307605825"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18538153691"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18538164337"
 	plr.Character.Humanoid:ChangeState(3)
 	Animate.Disabled = false
 end)
